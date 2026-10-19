@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Inox Wind Wins 200 MW Turnkey Order Worth \u20b91,600 Crore From NLC India - Sahi",
+    "source": "Sahi",
+    "matched_query": "wins order worth India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Hirect shares jump over 4% after order wins worth \u20b9120 crore from Indian Railways, stock up 72% YTD - Upstox",
+    "source": "Upstox",
+    "matched_query": "wins order worth India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Indian Emulsifiers Wins Export Orders Worth \u20b96.75 Crore from US Customer - smallcapspotlight.in",
+    "source": "smallcapspotlight.in",
+    "matched_query": "wins order worth India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Inox India Share Price Gains 5% On Rs 939-Crore Worth Multiple Order Wins - NDTV Profit",
+    "source": "NDTV Profit",
+    "matched_query": "wins order worth India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Hirect Wins First Indian Railways Orders Worth \u20b9120 Crore For Propulsion Systems - Sahi",
+    "source": "Sahi",
+    "matched_query": "wins order worth India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Apollo Micro Systems and subsidiary win orders worth \u20b9189.57 crore - scanx.trade",
+    "source": "scanx.trade",
+    "matched_query": "wins order worth India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Sun Pharma's quarterly profit jumps on strength in specialty medicines - reuters.com",
+    "source": "reuters.com",
+    "matched_query": "profit jumps India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Xpro India Standalone Q1 Net Profit Jumps to \u20b99.8 Crore, Revenue Rises to \u20b9174 Crore - Sahi",
+    "source": "Sahi",
+    "matched_query": "profit jumps India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "ABB India Q2 Profit Jumps 3% to Rs 362 Cr; Record Orders - Rediff MoneyWiz",
+    "source": "Rediff MoneyWiz",
+    "matched_query": "profit jumps India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Leela Hotels Q1 profit jumps six fold to Rs 49 crore; revenue up 28% - The Times of India",
+    "source": "The Times of India",
+    "matched_query": "profit jumps India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "GAIL India Q1 results: Net profit jumps 240% QoQ to \u20b94,292 crore on strong margin growth; revenue rises 12% - Upstox",
+    "source": "Upstox",
+    "matched_query": "profit jumps India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Glenmark Pharma Q1 profit jumps over 10-fold as India, North America businesses power growth - CNBC TV18",
+    "source": "CNBC TV18",
+    "matched_query": "profit jumps India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "India's Adani Enterprises posts quarterly loss on US settlement charge - reuters.com",
+    "source": "reuters.com",
+    "matched_query": "posts loss India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Indian Oil posts first quarterly loss in 15 on crude price surge - Yahoo Finance UK",
+    "source": "Yahoo Finance UK",
+    "matched_query": "posts loss India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Indian Oil posts first quarterly loss in 15 on crude price surge - BusinessLine",
+    "source": "BusinessLine",
+    "matched_query": "posts loss India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Indian Oil posts first quarterly loss in 15 on crude price surge - TradingView",
+    "source": "TradingView",
+    "matched_query": "posts loss India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Singapore Airlines Posts First Quarterly Loss Since Pandemic on Fuel Costs, Air India - WSJ",
+    "source": "WSJ",
+    "matched_query": "posts loss India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "Indian Oil posts \u20b91,140 crore Q1 loss amid elevated energy prices - business-standard.com",
+    "source": "business-standard.com",
+    "matched_query": "posts loss India",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "real_live_pull"
+  },
+  {
+    "title": "RELIANCE INDUSTRIES LTD bags mega Rs 15,000 crore order from Indian Railways for high-speed rail corridor",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "order_win_material"
+  },
+  {
+    "title": "TATA CONSULTANCY SERV LT wins small Rs 2 crore annual maintenance contract from a municipal corporation",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "order_win_non_material"
+  },
+  {
+    "title": "INFOSYS LIMITED reports Q1 net profit surges 42% YoY on strong deal wins, beats street estimates",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "profit_increase_above_threshold"
+  },
+  {
+    "title": "HDFC BANK LTD posts modest 8% rise in quarterly net profit amid steady demand",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "profit_increase_below_threshold"
+  },
+  {
+    "title": "ICICI BANK LTD. revenue grows 25% YoY driven by strong export demand",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "revenue_growth_above_threshold"
+  },
+  {
+    "title": "Buzzing stocks: LARSEN & TOUBRO LTD. gains on strong festive sales, STATE BANK OF INDIA slips after regulatory setback, ITC LTD up on fresh export order",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "multi_company_roundup"
+  },
+  {
+    "title": "HINDUSTAN UNILEVER LTD. loses key supply contract to rival bidder, shares under pressure",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "order_loss_negative"
+  },
+  {
+    "title": "BHARTI AIRTEL LIMITED reports 20% drop in quarterly profit amid weak realizations",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "profit_decrease_negative"
+  },
+  {
+    "title": "Gold prices steady as investors await central bank rate decision",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "other_irrelevant"
+  },
+  {
+    "title": "KOTAK MAHINDRA BANK LTD announces record order win worth Rs 8,000 crore from state highway authority",
+    "source": "Test Wire",
+    "matched_query": "synthetic",
+    "age_minutes": 90,
+    "synthetic": true,
+    "case": "stale_should_be_discarded"
+  },
+  {
+    "title": "Shadowfax Technologies shares surge as company reports strong quarterly profit growth",
+    "source": "Test Wire",
+    "matched_query": "special_case",
+    "age_minutes": 5,
+    "synthetic": true,
+    "case": "shadowfax_profit_exit_demo"
+  },
+  {
+    "title": "Bajaj Finance Q1 results: Net profit rises 27% to Rs 5,986 crore, NII up 24%; AUM increase 23% to Rs 4 lakh crore, asset quality improves",
+    "source": "Moneycontrol",
+    "matched_query": "special_case",
+    "age_minutes": 5,
+    "synthetic": false,
+    "case": "bajaj_finance_after_hours_real"
+  }
+]
