@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# secrets / tokens -- never commit these
+upstox_secrets.json
+.upstox_token.json
+
+# generated/cache state -- local run artifacts, not source
+.nse_seen.json
+.trade_seen.json
+.trade_news_seen.json
+.trade_pending.json
+.trade_state.json
+.instrument_master_cache.json
+
+# stocki/ (Node/React dashboard)
+stocki/**/node_modules/
+stocki/**/dist/
+stocki/logs/
