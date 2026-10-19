@@ -1,0 +1,232 @@
+:root {
+  --bg: #f7f7f8;
+  --panel: #ffffff;
+  --border: #e2e2e6;
+  --text: #16161a;
+  --muted: #6b6b76;
+  --accent: #2f6fed;
+  --green: #1a9e5c;
+  --red: #d1414a;
+  --amber: #b57500;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101014;
+    --panel: #17171d;
+    --border: #2a2a32;
+    --text: #eaeaee;
+    --muted: #9797a3;
+    --accent: #6a9bff;
+    --green: #3fcf83;
+    --red: #ff6b70;
+    --amber: #e0a72a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#root { max-width: 1400px; margin: 0 auto; padding: 16px 24px 48px; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header h1 { font-size: 20px; margin: 0; }
+.brand { display: flex; align-items: center; gap: 10px; }
+
+.tabs { display: flex; gap: 8px; }
+.tabs button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.tabs button.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+.controls { display: flex; align-items: center; gap: 12px; }
+select, input[type="date"] {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 13px;
+}
+
+.as-of { color: var(--muted); font-size: 12px; display: inline-flex; align-items: center; gap: 6px; }
+.as-of.refresh-error { color: #e5484d; }
+
+.refresh-flash {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3dd68c;
+  animation: refresh-flash-fade 1.2s ease-out forwards;
+}
+@keyframes refresh-flash-fade {
+  0% { opacity: 1; transform: scale(1.4); }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.kpi {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.kpi .label { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+.kpi .value { font-size: 22px; font-weight: 600; }
+.kpi .value.positive { color: var(--green); }
+.kpi .value.negative { color: var(--red); }
+.kpi .sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 16px; margin-bottom: 20px; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+.panel h3 { margin: 0 0 12px; font-size: 14px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 500; font-size: 12px; }
+tr:last-child td { border-bottom: none; }
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+.badge.ok { color: var(--green); border-color: var(--green); }
+.badge.bad { color: var(--red); border-color: var(--red); }
+.badge.warn { color: var(--amber); border-color: var(--amber); }
+.badge.muted { color: var(--muted); }
+
+.stale-row td:first-child { box-shadow: inset 3px 0 0 var(--amber); }
+
+.empty { color: var(--muted); font-size: 13px; padding: 8px 0; }
+
+.health-strip { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+.health-item {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  flex: 1;
+  min-width: 220px;
+}
+.health-item.degraded { border-color: var(--red); }
+.health-item .cmd { font-weight: 600; text-transform: capitalize; }
+.health-item .meta { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+a { color: var(--accent); }
+
+.range-picker { display: flex; gap: 8px; align-items: center; }
+
+.chart-wrap { width: 100%; height: 220px; }
+
+/* Fixed-height scroll area, roughly 15 single-line rows + header, so long
+   feeds (signal feed, positions) scroll internally instead of stretching
+   the page. Sticky header stays visible while scrolling. */
+.table-scroll { max-height: 520px; overflow-y: auto; }
+.table-scroll table thead th { position: sticky; top: 0; background: var(--panel); z-index: 1; }
+
+/* Signal feed keeps this height even with few rows -- a panel that shrinks
+   to fit 2-3 rows collapses the filter dropdowns' room to open below them,
+   and the layout jumping around per-filter makes repeated selection
+   annoying. Positions doesn't get this -- only the feed was reported as
+   hard to use. */
+.feed-scroll { min-height: 520px; }
+
+.truncate-1 {
+  display: block;
+  max-width: 380px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.filter-row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+
+.searchable-select { position: relative; width: 160px; }
+.searchable-select > input {
+  width: 100%;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 13px;
+}
+.searchable-select-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 240px;
+  overflow-y: auto;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+}
+.searchable-select-option {
+  padding: 5px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.searchable-select-option:hover { background: var(--accent); color: white; }
+.searchable-select-option input[type="checkbox"] { margin-right: 6px; pointer-events: none; }
+.searchable-select-empty { padding: 5px 10px; font-size: 13px; color: var(--muted); }
+
+.expand-toggle {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+}
+
+.expanded-detail { background: var(--bg); }
+.expanded-detail td { padding: 10px 8px; }
+
+.copy-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0 0 0 5px;
+  vertical-align: middle;
+}
+.copy-btn:hover { color: var(--accent); }
